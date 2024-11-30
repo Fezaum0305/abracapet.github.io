@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AbraçaPet</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&display=swap" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src=".\img\logo.png" alt="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href=".\index.html">Adoção</a></li>
+        <span class="divider"></span><!--|-->
+        <li><a href=".\nossoprojeto\nossoprojeto.html">Nosso projeto</a></li>
+        <span class="divider"></span><!--|-->
+        <li><a href=".\comoajudar\comoajudar.html">Como ajudar?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src=".\img\teee 1.png" alt="Cachorro olhando para o lado">
+  </section>
+
+  <section class="actions">
+    <a href=".\divulgarpet\divulgarpet.html"><button class="btn-divulgar">Divulgar pet</button></a>
+  </section>
+
+  <section id="adocao" class="about">
+    <h3>Nossos pets para adoção:</h3>
+    <p>Procure e encontre o seu melhor amigo aqui.</p>
+  </section>
+
+  <section class="pets">
+    <div class="pet-grid" id="petGrid"></div>
+  </section>
+
+  <header>
+    <h1>Avaliações</h1>
+  </header>
+  <main>
+    <div class="avaliacoes-container">
+      <div class="avaliacao">
+        <img src=".\img\Ellipse 26.png" alt="Foto de Guilherme">
+        <h3>Guilherme</h3>
+        <p class="estrelas">★★★★★</p>
+        <p>Achei o site muito acolhedor e informativo! Tem orientações muito claras sobre a adoção e os cuidados com os pets, que ajuda bastante quem está se preparando para adotar.</p> 
+      </div>
+      <div class="avaliacao">  
+        <img src=".\img\Ellipse 27.png" alt="Foto de Jacira">
+        <h3>Jacira</h3>
+        <p class="estrelas">★★★★★</p>
+        <p>A plataforma é maravilhosa! Dá para ver que eles realmente se preocupam com o bem-estar dos animais e com a felicidade dos adotantes. O processo de adoção é bem organizado e seguro!</p>    
+      </div>
+      <div class="avaliacao">
+        <img src=".\img\Ellipse 28.png" alt="Foto de João"> 
+        <h3>João</h3>          
+        <p class="estrelas">★★★★★</p>
+        <p>Site incrível! Boa navegação, fácil para ver todos os detalhes sobre os pets disponíveis. É ótimo saber que existe um cuidado especial para encontrar um lar ideal para cada animal!</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <div>
+        <a href=".\index.html"><h4>Adoção</h4></a>
+        <h5>Divulgar</h5>
+      </div>
+      <div>
+        <a href=".\nossoprojeto\nossoprojeto.html"><h4>Nosso projeto</h4></a>
+        <h5>Por que iniciamos e qual nosso objetivo?</h5>
+        <h5>Como funciona nossa plataforma?</h5>
+        <h5>Método de divulgação e adoção</h5>
+      </div>     
+      <div>
+        <a href=".\comoajudar\comoajudar.html"><h4>Como ajudar?</h4></a>
+        <h5>Doações para ajudar o projeto</h5>
+        <h5>Por que ajudar o projeto?</h5>  
+        <h5>Pix para doações</h5>               
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <span>AbraçaPet | Todos os direitos reservados.</span>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" class="icon">
+            <img src=".\img\insta.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/" class="icon">
+            <img src=".\img\facebook.png" alt="Facebook">
+          </a>
+          <a href="https://br.linkedin.com/" class="icon">
+            <img src=".\img\likendin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  <script>
+    //pets
+    const pets = [
+      { name: "Maverick", location: "João Pessoa, Paraíba", image: "./img/maverick.png", link: "./maverick/pet1.html" },
+      { name: "Max", location: "São Paulo, São Paulo", image: "./img/max.png", link: "./max/pet2.html" },
+      { name: "Thor", location: "Rio de Janeiro, Rio de Janeiro", image: "./img/thor.png", link: "./thor/pet3.html" },
+      { name: "Laika", location: "Goiânia, Goiás", image: "./img/laika.png", link: "./laika/pet12.html" },
+      { name: "Caramelo", location: "Goiânia, Goiás", image: "./img/caramelo.png", link: "./caramelo/pet4.html" },
+      { name: "Lana", location: "Salvador, Bahia", image: "./img/lana.png", link: "./lana/pet5.html" },
+      { name: "Dora", location: "Rio Branco, Acre", image: "./img/dora.png", link: "./dora/pet6.html" },
+      { name: "Otto", location: "São Paulo, São Paulo", image: "./img/otto.png", link: "./otto/pet7.html" },
+      { name: "Tina", location: "Cuiabá, Mato Grosso", image: "./img/tina.png", link: "./tina/pet8.html" },
+      { name: "Pinho", location: "Belo Horizonte, Minas Gerais", image: "./img/pinho.png", link: "./pinho/pet9.html" },
+      { name: "Pudim", location: "Florianópolis, Santa Catarina", image: "./img/pudim.png", link: "./pudim/pet10.html" },
+      { name: "Fred", location: "Rio de Janeiro, Rio de Janeiro", image: "./img/fred.png", link: "./fred/pet11.html" },
+      { name: "Chanel", location: "Campinas, São Paulo", image: "./img/chanel.png", link: "./chanel/pet13.html" },
+      { name: "Belém", location: "Piauí, Teresina", image: "./img/belem.png", link: "./belem/pet14.html" },
+    ];
+
+    // Renderizar pets
+    const petGrid = document.getElementById('petGrid');
+    pets.forEach((pet) => {
+      const petCard = `
+        <a href="${pet.link}">
+          <div class="pet-card">
+            <img src="${pet.image}" alt="${pet.name}">
+            <div class="pet-info">
+              <h3>${pet.name}</h3>
+              <p>${pet.location}</p>
+            </div>
+          </div>
+        </a>`;
+      petGrid.innerHTML += petCard;
+    });
+
+    
+    document.body.appendChild(scrollToAdocao);
+
+    scrollToAdocao.addEventListener('click', () => {
+      document.getElementById('adocao').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
