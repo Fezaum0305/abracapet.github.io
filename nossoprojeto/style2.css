@@ -8,7 +8,6 @@ body {
   color: #4a2a8a;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .navbar {
@@ -199,7 +198,7 @@ footer {
   .navbar {
     flex-direction: column;
     gap: 10px;
-    padding: 0;
+    padding: 10px;
   }
 
   .navbar h1 {
@@ -245,4 +244,119 @@ footer {
     width: 25px;
     height: 25px;
   }
+}
+
+.left-image-layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-image-layout .image-container {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.left-image-layout .image-container img {
+  max-width: 80%; 
+  height: auto;
+  border-radius: 10px;
+}
+
+.left-image-layout .text-container {
+  flex: 1.5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center; 
+}
+
+.left-image-layout .text-box {
+  background-color: #6b2dd1;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.platform-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row-reverse; /* Imagem à esquerda e texto à direita */
+}
+
+.platform-content .image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.platform-content .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.platform-content .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.platform-content .text-box {
+  background-color: #6b2dd1;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-success {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row; 
+}
+
+.adoption-success .image-container {
+  flex: 1; 
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.adoption-success .image-container img {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 10px;
+}
+
+.adoption-success .text-container {
+  flex: 1.5; 
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  max-width: 600px; 
+  text-align: justify;
 }
